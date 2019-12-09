@@ -1,0 +1,81 @@
+.products
+    padding: 50px 0
+
+    &__list
+        @extend $container
+
+    &__title
+        font-size: 22px
+        font-weight: semibold
+        text-align: center
+        padding-bottom: 25px
+
+    &__case
+        box-shadow: none
+        text-align: center
+
+    &__name
+        display: block
+        font-size: 16px
+        font-weight: regular
+        line-height: 18px
+        height: 20px
+        overflow: hidden
+        margin-bottom: 15px
+
+    &__prices
+        height: 38px
+        margin-bottom: 10px
+
+    &__actions
+        .btn-cart
+            background: none
+            color: color1_bg
+            height: 36px
+            padding: 0 16px
+            font-size: 14px
+            font-weight: bold
+            border: solid 1px color1_bg
+            border-radius: 0
+
+            &:hover
+                background: color1_bg
+                color: #fff
+
+    &--list
+        .products
+            &__case
+                display: flex
+                justify-content: center
+                align-items: center
+
+            &__header
+                flex: 0 1 275px
+
+            &__prices
+                display: flex
+                height: auto
+                margin-bottom: 0
+
+            &__name
+                flex: 0 0 100%
+
+            &__actions
+                padding-left: 10px
+
+            &__main
+                display: flex
+                align-items: center
+                flex-flow: row wrap
+                flex: 1
+                min-width: 0
+                text-align: left
+
+                .price-box-parcelado
+                    margin-bottom: 0
+
+                .price-box
+                    justify-content: flex-start
+
+                    .regular-price, .old-price
+                        padding-left: 0

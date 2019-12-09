@@ -1,0 +1,33 @@
+.top-head
+    position: absolute
+    top: 0
+    right: 0
+    left: 225px
+    display: none
+
+    &__link
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        font-size: 12px
+        font-weight: bold
+        text-transform: uppercase
+
+        .ico
+            width: 13px
+            height: 11px
+            margin-right: 3px
+            margin-top: -2px
+
+@media (min-width: 993px)
+    .top-head
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        &__item
+            flex: 1
+            min-width: 0
+
+            &:last-child
+                flex: 0 0 auto

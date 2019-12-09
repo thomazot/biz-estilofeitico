@@ -1,0 +1,65 @@
+.price-box
+    display: flex
+    justify-content: center
+    aling-items: center
+    margin-bottom: 0
+    height: 21px
+
+    .minimal-price
+        display: flex
+
+        .label
+            display: none
+
+        .price span
+            font-size: 16px
+            font-weight: bold
+            color: color1_bg
+
+    .old-price
+        padding: 0 5px
+
+        .label
+            display: none
+
+        .price
+            text-decoration: none
+
+            span
+                font-size: 12px
+                font-weight: bold
+                color: #7d7d7d
+
+                &:before
+                    content: 'De '
+
+    .regular-price, .special-price
+        padding: 0 5px
+
+        .label
+            display: none
+
+        .price span
+            font-size: 16px
+            font-weight: bold
+            color: color1_bg
+
+            &:before
+                content: 'Por '
+
+.preco-parcelado-sem-juros
+    + .preco-parcelado
+        display: none
+
+.preco-parcelado, .preco-parcelado-sem-juros
+    &, .num, .de, .value
+        font-size: 12px
+        font-weight: medium
+        color: color1_bg
+
+    .upto, .s-juros
+        display: none
+
+.price-box-avista
+    .categories &
+        display: none

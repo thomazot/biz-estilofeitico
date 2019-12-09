@@ -1,0 +1,26 @@
+.sharing-links
+    li
+        display: none
+
+        &.fb-share, &.pt-share, &.wa-share
+            display: block
+
+    .list
+        align-items: center
+
+        &:before
+            content: 'compartilhe:'
+            color: color1_bg
+            font-size: 14px
+            font-weight: bold
+            text-transform: uppercase
+            opacity: 1
+            margin-bottom: 0
+
+        a
+            background: none
+
+            svg
+                fill: #2c2829
+                width: 20px
+                height: 20px

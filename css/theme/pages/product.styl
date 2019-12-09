@@ -1,0 +1,387 @@
+.product-image-gallery, .product-image-thumbs .thumb-link, .product-image-thumbs .thumb-link.on
+    box-shadow: none
+
+.prod
+    &__name h1
+        font-size: 22px
+        font-weight: regular
+        color: color1_bg
+        line-height: 1.2
+        padding-bottom: 10px
+
+    &__head
+        padding-bottom: 20px
+
+    &__shop
+        .configurable__caption
+            font-size: 16px
+            font-weight: bold
+            text-transform: uppercase
+
+        .product-rate .to-rate, .configurable:before, .price-box-avista
+            display: none
+
+        .price-box
+            justify-content: flex-start
+
+            .regular-price, .special-price
+                padding-left: 0
+
+                .price span
+                    font-size: 20px
+
+        .preco-parcelado, .preco-parcelado-sem-juros
+            &, .num, .de, .value
+                font-size: 16px
+
+        .sku
+            font-size: 12px
+            font-weight: regular
+
+        .brand
+            font-size: 12px
+            font-weight: regular
+            padding-top: 0
+
+            &:before
+                content: 'Marca: '
+
+            a
+                font-size: 12px
+                color: color2_bg
+                opacity: 1
+
+                span
+                    display: none
+
+                &:before
+                    content: attr(title)
+
+        .add-to-cart-buttons
+            display: flex
+
+        .qty-wrapper
+            flex: 0 0 60px
+
+        .add-to-cart-btn
+            flex: 1
+            padding: 0
+            height: 45px
+            background: color1_bg
+            font-size: 14px
+            font-weight: bold
+            color: #fff
+            width: 100%
+            box-shadow: none
+            padding: 0
+            border-radius: 0
+            line-height: 1
+
+            &:before
+                content: 'Compre Agora'
+
+            span
+                display: none
+
+            &:hover
+                background: color1_bg
+
+        .price-box
+            .regular-price, .special-price
+                span
+                    font-size: 20px
+
+            .old-price
+                font-size: 14px
+
+        .price-box-parcelado
+            .preco-parcelado, .preco-parcelado-sem-juros
+                font-size: 17px
+
+.add-to-links a, .frete__title, .tabs__tab.on, .tabs__tab, .related__title, .reviews__title, .jointsales__title
+    font-size: 14px
+    font-weight: medium
+    color: color2_bg
+
+.frete__title
+    justify-content: space-between
+
+    > span
+        order: -1
+        margin-left: 0
+
+@media (min-width: 569px)
+    .tabs
+        padding-top: 30px
+
+        &__tab
+            border: 0
+            font-size: 13px
+            font-weight: bold
+            color: color1_bg
+            text-align: left
+            height: 55px
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            padding-left: 0
+            text-transform: uppercase
+
+            span
+                display: flex
+                align-itemx: center
+                line-height: 22px
+
+            &.on
+                font-size: 13px
+                font-weight: bold
+                color: color1_bg
+
+            .ico
+                display: inline-block
+                fill: color1_bg
+                width: 27px
+                height: 23px
+                margin-right: 3px
+
+        &__content
+            border: 0
+            padding: 10px 0
+
+            .std
+                font-size: 14px
+                font-weight: 400
+                color: color1_bg
+                text-transform: uppercase
+
+    .related__title, .reviews__title
+        font-size: 20px
+        font-weight: medium
+        color: color1_bg
+        text-align: center
+
+    .related
+        position: relative
+        padding-top: 50px
+
+        &:before
+            content: ''
+            position: absolute
+            left: 50%
+            top: 0
+            height: 1px
+            width: 100vw
+            background: #ebebeb
+            transform: translateX(-50%)
+
+        &__subtitle, &__add-checkbox
+            display: none
+
+    .reviews
+        padding: 40px 0
+        color: color2_bg
+
+        input, textarea
+            box-shadow: none
+            border: 0
+
+        .form-list label
+            font-size: 12px
+            font-weight: regular
+            color: color2_bg
+
+        .subtitle
+            font-size: 16px
+            color: color2_bg
+
+        &__title
+            padding: 16px
+
+        &__content
+            display: block
+
+        &__add, &__resume, &__ratings
+            margin: 0 0 20px
+            background: none
+            box-shadow: none
+
+        .btn
+            font-size: 16px
+            font-weight: semibold
+
+    .add-to-links a
+        box-shadow: none
+        text-align: left
+        font-size: 12px
+        font-weight: medium
+        color: #c6c6c6
+
+        &:before
+            icon('\f004')
+            margin-right: 5px
+            color: color1_bg
+
+    .frete
+        position: relative
+
+        &__title
+            pointer-events: none
+            border: 0
+            padding: 15px 0
+            display: flex
+            justify-content: flex-start
+            font-size: 14px
+            font-weight: medium
+
+            span
+                display: none
+
+            &:before
+                content: ''
+                width: 20px
+                height: 20px
+                display: inline-block
+                background-image: url(truck)
+                background-size: 20px 20px
+                margin-right: 3px
+
+            &:after
+                content: 'Calcule a Entrega'
+
+            .ico
+                display: none
+                font-size: 14px
+                font-weight: semibold
+                color: #3b3732
+
+        &__content
+            display: block
+
+        &__form
+            background: #fff
+            border-radius: 0
+
+            .input-box
+                flex: 1
+                min-width: 0
+                border-bottom: solid 1px #e5e5e5
+
+            .input-text
+                box-shadow: none
+                background: none
+                border: 0
+                padding-left: 0
+                height: 43px
+
+            label
+                display: none
+
+        &__naosei
+            position: absolute
+            left: 100%
+            top: 6px
+            width: 100px
+            padding-left: 10px
+
+        &__actions
+            border-bottom: solid 1px #e5e5e5
+
+            .btn
+                font-size: 12px
+                font-weight: regular
+                color: #fff
+                height: 42px
+                background: none
+                color: color1_bg
+                box-shadow: none
+                padding-right: 0
+
+                &:hover
+                    background: none
+                    color: color1_bg
+
+                &:before
+                    content: 'Calcular'
+
+                span
+                    display: none
+
+    .prod
+        &__buys
+            display: flex
+            align-items: center
+            margin-bottom: 20px
+
+            .add-to-cart, .qty-wrapper
+                margin-bottom: 0
+
+            .add-to-cart
+                flex: 1
+                min-width: 0
+                margin-right: 20px
+
+        &__shop
+            .link-wishlist
+                span
+                    display: none
+
+                a:before
+                    font-size: 23px
+                    color: #fff
+                    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000
+
+@media (min-width: 993px)
+    .product-options .configurable
+        display: block
+
+    .reviews
+        &__content
+            display: flex
+
+    .prod
+        &__head
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            margin-bottom: 20px
+
+            .brand
+                padding-top: 0
+                margin: 0 20px
+
+        &__img
+            flex: 0 1 460px
+
+    .frete
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        max-width: 360px
+
+        &__title
+            box-shadow: none
+            margin-right: 10px
+            flex: 1
+            min-width: 0
+            box-shadow: 0 100px 0 #fff
+
+        &__content
+            flex: 0 0 auto
+            min-width: 0
+
+            .input-box
+                max-width: 135px
+
+        &__results
+            flex: 0 0 100%
+            margin-top: 10px
+
+    .product-rate .circle-percent
+        max-width: 100px
+
+    .product-rate .percent .text
+        font-size: 34px
+        margin-top: -5px
+
+.reviews .form-list label
+    font-size: 20px

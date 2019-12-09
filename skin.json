@@ -1,6 +1,6 @@
 {
     "protocol": "http",
-    "host": "malasmundi.loja.biz",
+    "host": "estilofeitico.loja.biz",
     "browsers": [">1%"],
     "pxtorem": {
         "rootValue": 16,

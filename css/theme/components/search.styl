@@ -1,0 +1,63 @@
+.search
+    &__label
+        display: none
+
+    &__button
+        border-radius: 0
+        background: #fff
+
+        .ico
+            fill: color1_bg
+            width: 20px
+            height: 20px
+
+        .text
+            display: none
+            font-size: 12px
+            font-weight: bold
+            color: color1_bg
+
+@media (min-width: 569px)
+    .search
+        margin: 10px 0
+
+        &__label
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 100%
+
+            .ico
+                width: 20px
+                height: 20px
+
+        .header &__input
+            box-shadow: none
+            border: 0
+            padding-left: 0
+            border-bottom: solid 1px #f2f2f2
+
+            &::placeholder
+                font-size: 12px
+                font-weight: medium
+                color: #7f7f7f
+
+            &:focus::placeholder
+                color: transparent
+
+        &__button
+            box-shadow: none
+            border-bottom: solid 1px #f2f2f2
+            padding-right: 0
+
+            .ico
+                display: none
+
+            .text
+                display: block
+
+@media (min-width: 993px)
+    .search
+        .header &
+            margin: 0 20px
+            flex: 0 1 275px

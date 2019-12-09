@@ -1,0 +1,59 @@
+.filters
+    &__filter .a--0, .link
+        color: #fff
+        font-size: 14px
+        font-weight: regular
+
+        .count
+            font-size: 14px
+            font-weight: regular
+            color: #fff
+
+    &__name
+        font-size: 14px
+        font-weight: bold
+        text-transform: uppercase
+        color: #fff
+
+    &__swatches
+        .has-thumb .swatch
+            width: 34px
+            height: 34px
+
+        .a--0
+            box-shadow: none
+
+    .tamanho
+        .filters__swatches span.swatch
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 0
+            line-height: 1
+            width: 34px
+            height: 34px
+            font-size: 14px
+            font-weight: medium
+            color: #2c2829
+            background: #ebebeb
+
+@media (min-width: 993px)
+    .filters
+        .title
+            font-size: 16px
+            font-weight: bold
+            text-transform: uppercase
+            padding: 10px 0
+
+        &__name, &__filter .a--0, .link
+            color: color1_bg
+
+            .count
+                color: #979797
+
+        &__filter
+            margin-bottom: -1px !important
+            background: #fff
+
+            &:hover
+                box-shadow: none

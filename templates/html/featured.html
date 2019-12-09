@@ -1,0 +1,26 @@
+<div class="featured">
+    {{widget type="interface/widget_produtos" template="interface/widgets/produtos.phtml" title="Produtos em Destaque" identificador="prodfeatured" carrossel="1" limite="12" markup="<h2 class='products__header'>
+        <a href='@url' itemprop='url' title='Mais detalhes' class='product-link'>
+            <span class='products__image product-image'>@foto(365x435)</span>
+        </a>
+        @selos
+    </h2>
+    <div class='products__main'>
+        <a href='@url' title='@nome(60)' class='products__name'>@nome</a>
+    
+        <div class='products__prices'>
+        @if(is_disponivel)
+            @preco
+            @preco(parcelado)
+        @else(is_disponivel)
+            <div class='esgotado'>Produto Esgotado</div>
+        @endif(is_disponivel)
+        </div>
+    
+        <div class='products__actions'>
+            @bt(comprar 'Comprer Agora')
+        </div>
+    </div>"}}
+    {{widget type="interface/widget_newsletter" template="interface/widgets/newsletter.phtml" identificador="newsletter" texto="<h3>Newsletter</h3>
+    <p>Cadastre seu E-mail e receba ofertas e novidades exclusivas</p>" label_email="E-mail:" placeholder_email="Seu E-mail" texto_botao="Cadastrar" exibir_nome="1" label_nome="Nome:" placeholder_nome="Seu Nome"}}
+    </div>

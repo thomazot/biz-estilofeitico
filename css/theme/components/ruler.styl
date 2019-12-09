@@ -1,9 +1,26 @@
-#banner__ruler
-    font-size: 10px
-    font-weight: semi-bold
-    background: color1_bg
-    color: #fff
+.ruler
+    display: flex
+    justify-content: space-between
 
-    & .banner
-        &__wrapper
-            @extend $container
+    &__item
+        flex: 0 1 50%
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        height: 45px
+        font-size: 11px
+        font-weight: bold
+        color: color1_bg
+        text-transform: uppercase
+
+        .ico
+            margin-right: 5px
+            width: 16px
+            height: 11px
+            fill: #a6823b
+            margin-top: -2px
+
+@media (min-width: 1024px)
+    .ruler
+        &__item
+            font-size: 12px

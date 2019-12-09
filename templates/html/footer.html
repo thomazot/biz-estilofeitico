@@ -1,0 +1,50 @@
+<div class="footer__item">
+        <div class="footer__box">
+            <h3 class="footer__title">Estilo Feitiço</h3>
+            <div class="footer__content">
+                {{block type="menubuilder/output" identifier="footer-store"}}
+            </div>
+        </div>
+        <div class="footer__box">
+            <h3 class="footer__title">Formas de Pagamento</h3>
+            <div class="footer__content">
+                {{widget type="interface/widget_pagtos" template="interface/widgets/pagtos.phtml" identificador="pagtos_footer" pagtos="all"}}
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer__item">
+        <div class="footer__box">
+            <h3 class="footer__title">Dúvidas</h3>
+            <div class="footer__content">
+                {{block type="menubuilder/output" identifier="footer-help"}}
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer__item">
+        <div class="footer__box">
+            <h3 class="footer__title">Minha Conta</h3>
+            <div class="footer__content">
+                {{block type="menubuilder/output" identifier="footer-myaccount"}}
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer__item">
+        <div class="footer__box">
+            <h3 class="footer__title">Redes Sociais</h3>
+            <div class="footer__content">{{widget type="interface/widget_social" template="interface/widgets/social.phtml" identificador="socials" redes="all"}}</div>
+        </div>
+        <div class="footer__box">
+            <h3 class="footer__title">Segurança</h3>
+            <div class="footer__content">
+                {{widget type="interface/widget_seals" template="interface/widgets/seals.phtml" identificador="selos_footer" seals="all"}}
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer__copyright">
+            A marca, logotipo, imagens e fotos reprodizidas neste site são propriedade de estilofeitico.com.br.  É vetada a sua reprodução, total ou parcial, sem a expressa autorização da administradora do site. 
+            © Estilo Feitiço 2019. Todos os direitos reservados.
+    </div>
